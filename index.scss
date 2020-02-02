@@ -1,0 +1,60 @@
+$title-font: "Bebas Neue", cursive;
+$quote-font: "Tangerine", cursive;
+
+$red-primary: #d31d4d;
+$blue-primary: #4b73c8;
+$gray-darkest: #42404b;
+$gray-lighter: #7d7c84;
+$gray-lightest: #ebebe9;
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 5rem;
+  margin-top: 0;
+  color: $red-primary;
+  text-align: center;
+}
+
+h2 {
+  font-family: $title-font;
+  font-size: 3rem;
+  margin-top: 0;
+  color: $blue-primary;
+  text-align: center;
+}
+
+.quote {
+  font-family: $quote-font;
+  font-size: 2rem;
+  text-align: left;
+  color: $gray-lighter;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.quote-name {
+  @extend .quote;
+  text-align: right;
+  margin: 0;
+}
+
+.footer {
+  background-color: $gray-lightest;
+  padding: 2rem;
+}
