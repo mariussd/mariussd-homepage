@@ -10,8 +10,8 @@
     "cssnano": "^4.1.10"
   },
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html && docker build -t mariussd/homepage . && docker tag mariussd/homepage mariussd/homepage:latest && docker push mariussd/homepage:latest"
   },
   "keywords": [],
   "author": "",
