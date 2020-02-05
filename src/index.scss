@@ -1,5 +1,5 @@
-$title-font: "Bebas Neue", cursive;
-$quote-font: "Tangerine", cursive;
+$title-font: "Playfair Display", serif;
+$social-link-font: "Bebas Neue", cursive;
 
 $red-primary: #d31d4d;
 $blue-primary: #4b73c8;
@@ -16,7 +16,7 @@ body {
 
 #root {
   width: 100%;
-  height: 90%;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,7 +25,7 @@ body {
 
 h1 {
   font-family: $title-font;
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 0;
   color: $red-primary;
   text-align: center;
@@ -33,30 +33,27 @@ h1 {
 
 h2 {
   font-family: $title-font;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 0;
   color: $blue-primary;
   text-align: center;
 }
 
-/*
-.quote {
-  font-family: $quote-font;
-  font-size: 2rem;
-  text-align: left;
-  color: $gray-lighter;
-  padding-left: 2rem;
-  padding-right: 2rem;
+.name {
+  margin-top: 50%;
 }
 
-.quote-name {
-  @extend .quote;
-  text-align: right;
-  margin: 0;
+.social-link-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.footer {
-  background-color: $gray-lightest;
-  padding: 2rem;
+.social-link {
+  font-family: $social-link-font;
+  font-size: 1.5rem;
+  color: $blue-primary;
+  text-decoration: none;
 }
-*/
