@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "sass": "^1.25.0"
+    "sass": "^1.25.0",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
@@ -12,6 +13,9 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html && docker build -t mariussd/homepage . && docker tag mariussd/homepage mariussd/homepage:latest && docker push mariussd/homepage:latest"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
   },
   "keywords": [],
   "author": "",
