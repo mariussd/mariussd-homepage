@@ -91,15 +91,25 @@
     <div id="root">
       <header>
         <h1 class="name">Marius Sørensen Dreyer</h1>
-        <div id="app">
-          {{ day }}
-        </div>
+        <div id="app">{{ day }}</div>
         <div id="app-5">
           <p v-if="visible">{{ message }}</p>
           <p>{{ counter }}</p>
-          <button v-on:click="toggleMessage">Toggle message</button>
-          <button v-on:click="incrementCounter">Increment</button>
-          <button v-on:click="decrementCounter">Decrement</button>
+          <img
+            src="https://mariussd.com/api/test/image"
+            alt="Lol2k"
+            v-if="imageVisible"
+          />
+          <button @click="toggleMessage">Toggle message</button>
+          <button @click="toggleImage">Toggle image</button>
+          <button @click="incrementCounter">Increment</button>
+          <button @click="decrementCounter">Decrement</button>
+        </div>
+        <div id="watch-example">
+          <p>Watch this</p>
+          <input v-model="math" />
+          <p>{{ answer }}</p>
+          <script src="https://gist.github.com/mariussd/d46000c664df53253c7341fa122bc85e.js"></script>
         </div>
         <div class="social-link-container">
           <a
