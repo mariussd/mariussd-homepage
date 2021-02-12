@@ -2,8 +2,10 @@ $title-font: 'Playfair Display', serif;
 $social-link-font: 'Bebas Neue', cursive;
 
 $green-primary: #66ce91;
+$green-primary-hover: #5eb986;
 $red-primary: #d31d4d;
 $blue-primary: #4478e7;
+$blue-primary-hover: #3b64bd;
 $gray-darkest: #42404b;
 $gray-lighter: #b3b3b8;
 $gray-lightest: #ebebe9;
@@ -19,9 +21,15 @@ body {
 	width: 100%;
 	height: 100%;
 	display: flex;
+}
+
+#home {
+	width: 100%;
+	height: 100%;
+	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 5%;
+	margin-bottom: 5%;
 }
 
 h1 {
@@ -34,7 +42,10 @@ h1 {
 
 .container {
 	display: flex;
+	flex-grow: 1;
+	height: 100%;
 	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .name {
@@ -77,13 +88,29 @@ h1 {
 	display: flex;
 	width: 100px;
 	height: 100px;
+	margin-bottom: 15px;
 
 	&#projects {
 		background-color: $green-primary;
+
+		&:hover {
+			background-color: $green-primary-hover;
+		}
 	}
 
 	&#portfolio {
 		background-color: $blue-primary;
+
+		&:hover {
+			background-color: $blue-primary-hover;
+		}
+	}
+
+	@media only screen and (max-width: 640px) {
+		font-size: 2.5em;
+		width: 80px;
+		height: 80px;
+		border-radius: 40px;
 	}
 }
 
@@ -92,6 +119,7 @@ h1 {
 		flex-direction: column;
 		align-items: flex-end;
 		height: 25%;
+		margin-bottom: 5%;
 	}
 
 	.social-link {

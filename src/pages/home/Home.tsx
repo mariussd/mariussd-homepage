@@ -1,16 +1,15 @@
 import React from 'react';
 import './_home.scss';
-import { Link } from 'react-router-dom';
 import NavigationButton from './components/NavigationButton';
 
 const Home = () => {
 	return (
-		<div id="root">
+		<div id="home">
 			<div className="container">
 				<h1 className="name">Marius Sørensen Dreyer</h1>
 				<div className="link-button-container">
-					<NavigationButton to="/projects" icon="handyman" label="projects" />
-					<NavigationButton to="/portfolio" icon="photo_camera" label="portfolio" />
+					<NavigationButton to="/projects" icon="handyman" id="projects" label="Projects" />
+					<NavigationButton to="/portfolio" icon="photo_camera" id="portfolio" label="Portfolio" />
 				</div>
 				<div className="social-link-container">
 					<a
