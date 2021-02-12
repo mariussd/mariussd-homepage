@@ -1,22 +1,17 @@
 import React from 'react';
 import './_home.scss';
 import { Link } from 'react-router-dom';
+import NavigationButton from './components/NavigationButton';
 
 const Home = () => {
 	return (
 		<div id="root">
-			<header>
+			<div className="container">
 				<h1 className="name">Marius Sørensen Dreyer</h1>
-
 				<div className="link-button-container">
-					<Link to="/projects">
-						<span className="link-button material-icons">handyman</span>
-					</Link>
-					<Link to="/portfolio">
-						<span className="link-button material-icons">photo_camera</span>
-					</Link>
+					<NavigationButton to="/projects" icon="handyman" label="projects" />
+					<NavigationButton to="/portfolio" icon="photo_camera" label="portfolio" />
 				</div>
-
 				<div className="social-link-container">
 					<a
 						className="social-link"
@@ -38,7 +33,7 @@ const Home = () => {
 						github
 					</a>
 				</div>
-			</header>
+			</div>
 		</div>
 	);
 };

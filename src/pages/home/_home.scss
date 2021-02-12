@@ -1,8 +1,9 @@
 $title-font: 'Playfair Display', serif;
 $social-link-font: 'Bebas Neue', cursive;
 
+$green-primary: #66ce91;
 $red-primary: #d31d4d;
-$blue-primary: #4b73c8;
+$blue-primary: #4478e7;
 $gray-darkest: #42404b;
 $gray-lighter: #b3b3b8;
 $gray-lightest: #ebebe9;
@@ -29,6 +30,11 @@ h1 {
 	margin-top: 0;
 	color: $red-primary;
 	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
 }
 
 .name {
@@ -61,7 +67,6 @@ h1 {
 }
 
 .link-button {
-	background-color: $blue-primary;
 	color: #ffffff;
 	border-radius: 50px;
 	text-align: center;
@@ -72,6 +77,14 @@ h1 {
 	display: flex;
 	width: 100px;
 	height: 100px;
+
+	&#projects {
+		background-color: $green-primary;
+	}
+
+	&#portfolio {
+		background-color: $blue-primary;
+	}
 }
 
 @media only screen and (max-width: 640px) {
