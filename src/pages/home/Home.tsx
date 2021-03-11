@@ -1,5 +1,5 @@
 import React from 'react';
-import './_home.scss';
+import './home.scss';
 import NavigationButton from './components/NavigationButton';
 import github from './images/github.svg';
 import instagram from './images/instagram.svg';
@@ -7,8 +7,8 @@ import linkedin from './images/linkedin.svg';
 
 const Home = () => {
 	return (
-		<div id="home">
-			<div className="container">
+		<div id="home-container">
+			<div className="home-container">
 				<h1 className="name">Marius Sørensen Dreyer</h1>
 				<div className="link-button-container">
 					<NavigationButton to="/projects" icon="handyman" id="projects" label="Projects" />
