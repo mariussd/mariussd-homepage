@@ -1,6 +1,9 @@
 import React from 'react';
 import './_home.scss';
 import NavigationButton from './components/NavigationButton';
+import github from './images/github.svg';
+import instagram from './images/instagram.svg';
+import linkedin from './images/linkedin.svg';
 
 const Home = () => {
 	return (
@@ -18,7 +21,7 @@ const Home = () => {
 						rel="noreferrer"
 						href="https://www.linkedin.com/in/mariussd/"
 					>
-						linkedin
+						<img src={linkedin} />
 					</a>
 					<a
 						className="social-link"
@@ -26,10 +29,10 @@ const Home = () => {
 						rel="noreferrer"
 						href="https://www.instagram.com/marius.dreyer/"
 					>
-						instagram
+						<img src={instagram} />
 					</a>
 					<a className="social-link" target="_blank" rel="noreferrer" href="https://github.com/mariussd">
-						github
+						<img src={github} />
 					</a>
 				</div>
 			</div>

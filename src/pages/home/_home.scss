@@ -67,6 +67,13 @@ h1 {
 	text-align: center;
 	color: $gray-lighter;
 	text-decoration: none;
+	opacity: 0.15;
+
+	&:hover {
+		transition: all 0.3s ease-in-out;
+		opacity: 0.6;
+		transform: scale(1.15);
+	}
 }
 
 .link-button-container {
@@ -89,6 +96,7 @@ h1 {
 	width: 100px;
 	height: 100px;
 	margin-bottom: 15px;
+	transition: all 0.3s ease-in-out;
 
 	&#projects {
 		background-color: $green-primary;
@@ -112,6 +120,12 @@ h1 {
 		height: 80px;
 		border-radius: 40px;
 	}
+}
+
+.link-button-label {
+	font-size: 1.7em;
+	color: #b3b3b8;
+	transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 640px) {
